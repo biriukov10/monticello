@@ -1,18 +1,71 @@
+@import "layout.scss";
 
-.box {
-  background-color: #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  height: 100%;
-}
-.btn {
-  background: $primaryColor;
-  min-width: 100px;
-  padding: 0 .1em;
-
-  &:hover {
-    @include buttonHover;
+.ba-header {
+  height: 100vh;
+  padding: 50px 0 48px;
+  color: #fff;
+  text-transform: uppercase;
+  background: {
+    image: url(../images/imgBg.png), linear-gradient(90deg, rgba(85, 183, 254, 1) 0%, rgba(126, 93, 251, 1) 49%);
+    repeat: no-repeat;
+    position: center;
+  }
+  .ba-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .ba-logo__item {
+      width: 244px;
+      height: 60px;
+    }
+    .ba-menu {
+      display: flex;
+      &__item {
+        font-family: $primaryFontFamily;
+        margin-right: 100px;
+        font-size: 0.875rem;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+    .ba-social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__link {
+        border: 1px solid #fff;
+        margin-right: 20px;
+        padding: 11px 16px;
+        border-radius: 50%;
+        transition: 0.3s;
+        &:hover {
+          opacity: 0.7;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        &--twitter {
+          padding: 12px 14px;
+        }
+        &--instagram {
+          padding: 11px 14px;
+        }
+        .ba-social__item {
+          &--facebook {
+            width: 9px;
+            height: 16px;
+          }
+          &--twitter {
+            width: 15px;
+            height: 12px;
+          }
+          &--instargam {
+            width: 15px;
+            height: 16px;
+          }
+        }
+      }
+    }
   }
 }

@@ -1,17 +1,49 @@
-//variables 
-$container: 1170px;
+//variables
+$container: 1176px;
 $gap: 15px;
 $col: 12;
 $colWidth: 100% / $col;
 
-$primaryColor: pink;
-$secondaryColor: #4e4e4e;
+$primaryColor: #2c4058;
+$secondaryColor: #636c77;
 
 $btnBorderColor: $primaryColor;
 
+$primaryFontFamily: "Gotham Pro", sans-serif;
+$secondaryFontFamily: "Open Sans", sans-serif;
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  height: 100%;
+  max-width: 100%;
 }
 
 .container {
@@ -30,19 +62,21 @@ $btnBorderColor: $primaryColor;
   margin-top: 1rem;
 }
 
-[class^='ba-col-'] {
+[class^="ba-col-"] {
   padding: 0 15px;
 }
-
 
 @for $i from 1 through $col {
   .ba-col-#{$i} {
     width: $colWidth * $i;
   }
 }
-
-//mixins
-@mixin buttonHover {
-  background-color: pink;
-  border-color: darken($btnBorderColor, 15%);
+.ba-hidden {
+  position: absolute;
+  left: -9999999px;
+  height: 1px;
+  width: 1px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
