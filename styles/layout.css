@@ -8,7 +8,8 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit; }
+  color: inherit;
+  transition: 0.3s; }
 
 h1,
 h2,
