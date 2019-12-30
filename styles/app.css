@@ -343,8 +343,7 @@ img {
     .ba-news .ba-project-card .ba-project-info {
       margin-top: -4px;
       padding: 24px 20px 29px;
-      background-color: #fff;
-      height: 275px; }
+      background-color: #fff; }
       .ba-news .ba-project-card .ba-project-info--padding {
         padding: 24px 15px 29px 20px; }
       .ba-news .ba-project-card .ba-project-info__title {
@@ -361,5 +360,61 @@ img {
         font-weight: 400; }
       .ba-news .ba-project-card .ba-project-info .ba-contact-card {
         margin-top: 30px; }
-        .ba-news .ba-project-card .ba-project-info .ba-contact-card_image {
+        .ba-news .ba-project-card .ba-project-info .ba-contact-card__image {
           margin-right: 20px; }
+        .ba-news .ba-project-card .ba-project-info .ba-contact-card__name {
+          position: relative;
+          bottom: 30px;
+          text-transform: uppercase;
+          font-size: 1.125rem; }
+        .ba-news .ba-project-card .ba-project-info .ba-contact-card__date {
+          position: relative;
+          display: block;
+          left: 87px;
+          font-size: 0.875rem;
+          bottom: 24px;
+          color: #55b7ff; }
+
+.ba-gallary {
+  padding: 165px 0 140px; }
+  .ba-gallary .ba-title {
+    text-align: center;
+    margin-bottom: 90px;
+    text-transform: uppercase;
+    font-family: "Gotham Pro", sans-serif;
+    color: #2c4058; }
+    .ba-gallary .ba-title__item {
+      font-size: 2.75rem; }
+      .ba-gallary .ba-title__item::before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 1px;
+        background-color: #2c4058;
+        margin: 0 auto 33px; }
+  .ba-gallary .ba-slide-card__item {
+    object-fit: cover; }
+  .ba-gallary .pad {
+    padding: 0 10px; }
+  .ba-gallary .ba-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px; }
+    .ba-gallary .ba-link__item {
+      display: inline-block;
+      border: 1px solid #2c4058;
+      font-size: 0.875rem;
+      padding: 17px 55px;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-family: "Gotham Pro", sans-serif; }
+      .ba-gallary .ba-link__item:active {
+        color: #031933;
+        border-color: #031933; }
+      .ba-gallary .ba-link__item:hover {
+        color: #0b1e3570;
+        border-color: #0b1e3570; }
+
+#map {
+  width: 100%;
+  height: 700px; }

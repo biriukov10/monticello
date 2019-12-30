@@ -350,7 +350,7 @@
       margin-top: -4px;
       padding: 24px 20px 29px;
       background-color: #fff;
-      height: 275px;
+      // max-height: 275px;
       &--padding {
         padding: 24px 15px 29px 20px;
       }
@@ -370,10 +370,85 @@
       }
       .ba-contact-card {
         margin-top: 30px;
-        &_image {
+        &__image {
           margin-right: 20px;
+        }
+        &__name {
+          position: relative;
+          bottom: 30px;
+          text-transform: uppercase;
+          font-size: 1.125rem;
+        }
+        &__date {
+          position: relative;
+          display: block;
+          left: 87px;
+          font-size: 0.875rem;
+          bottom: 24px;
+          color: #55b7ff;
         }
       }
     }
   }
+}
+
+// start section gallary
+
+.ba-gallary {
+  padding: 165px 0 140px;
+  .ba-title {
+    text-align: center;
+    margin-bottom: 90px;
+    text-transform: uppercase;
+    font-family: $primaryFontFamily;
+    color: $primaryColor;
+
+    &__item {
+      font-size: 2.75rem;
+      &::before {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 1px;
+        background-color: $primaryColor;
+        margin: 0 auto 33px;
+      }
+    }
+  }
+  .ba-slide-card__item {
+    object-fit: cover;
+  }
+  .pad {
+    padding: 0 10px;
+  }
+
+  .ba-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    &__item {
+      display: inline-block;
+      border: 1px solid $primaryColor;
+      font-size: 0.875rem;
+      padding: 17px 55px;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-family: $primaryFontFamily;
+      &:active {
+        color: #031933;
+        border-color: #031933;
+      }
+      &:hover {
+        color: #0b1e3570;
+        border-color: #0b1e3570;
+      }
+    }
+  }
+}
+
+// maps block
+
+#map {
+  width: 100%;
+  height: 700px;
 }
