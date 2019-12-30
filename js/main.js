@@ -174,6 +174,7 @@ $(function () {
     map: map,
     title: 'Beetroot Academy',
     img: 'images/Pin.png',
+    icon: 'images/Pin.png',
   });
 
 
