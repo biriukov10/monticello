@@ -121,6 +121,7 @@
     margin-bottom: 155px;
     &__item {
       font-size: 2.75rem;
+      font-weight: 600;
       &::before {
         content: "";
         display: block;
@@ -330,9 +331,9 @@
     color: #fff;
     font-family: $primaryFontFamily;
     text-transform: uppercase;
-    font-weight: 300;
     &__item {
       font-size: 2.75rem;
+      font-weight: 500;
       &::before {
         content: "";
         display: block;
@@ -370,6 +371,7 @@
       }
       .ba-contact-card {
         margin-top: 30px;
+        font-family: $secondaryFontFamily;
         &__image {
           margin-right: 20px;
         }
@@ -405,6 +407,7 @@
 
     &__item {
       font-size: 2.75rem;
+      font-weight: 500;
       &::before {
         content: "";
         display: block;
@@ -458,12 +461,12 @@
 // contact modal
 
 .ba-footer {
-  padding: 204px 0 208px;
   position: relative;
+  padding: 204px 0 208px;
   background: {
-    image: url(../images/imgForFooter.png), linear-gradient(90deg, rgba(85, 183, 254, 1) 0%, rgba(126, 93, 251, 1) 49%);
+    image: url(../images/imgForFooter.png), linear-gradient(to right, #55b7ff, #44a8ff, #4b96ff, #6681ff, #8766fe);
     repeat: no-repeat;
-    position: center;
+    position: right top;
     size: cover;
   }
   .ba-contact {
@@ -478,7 +481,8 @@
       color: #fff;
     }
     top: -50%;
-    transform: translateX(50%);
+    left: 50%;
+    transform: translateX(-50%);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
     .ba-title {
       text-align: center;
@@ -486,9 +490,9 @@
       text-transform: uppercase;
       font-family: $primaryFontFamily;
       color: $primaryColor;
-
       &__item {
         font-size: 2.75rem;
+        font-weight: 500;
         &::before {
           content: "";
           display: block;
@@ -529,6 +533,7 @@
           font-size: 1.125rem;
           line-height: 22px;
           font-weight: 500;
+          color: $primaryColor;
           background-color: transparent;
           &:first-child {
             margin-bottom: 40px;
@@ -568,6 +573,78 @@
               border-color: #0b1e3570;
             }
           }
+        }
+      }
+    }
+  }
+  .ba-footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 770px;
+    margin: 70px auto 36px;
+    .ba-logo__item {
+      width: 244px;
+      height: 60px;
+    }
+    .ba-social {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &__link {
+        border: 1px solid #fff;
+        margin-right: 20px;
+        padding: 11px 16px;
+        border-radius: 50%;
+        &:hover {
+          opacity: 0.7;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+        &--twitter {
+          padding: 12px 14px;
+        }
+        &--instagram {
+          padding: 11px 14px;
+        }
+        .ba-social__item {
+          &--facebook {
+            width: 9px;
+            height: 16px;
+          }
+          &--twitter {
+            width: 15px;
+            height: 12px;
+          }
+          &--instargam {
+            width: 15px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .ba-copyright {
+    font-family: $primaryFontFamily;
+    font-size: 0.875rem;
+    color: #fff;
+    padding: 0 186px;
+    &__item {
+      position: relative;
+      display: inline-block;
+      font-weight: 400;
+      &:first-child {
+        margin-right: 40px;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 20px;
+          background-color: #b1ceff;
+          right: -10%;
         }
       }
     }
