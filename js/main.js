@@ -1,5 +1,6 @@
 $(function () {
 
+  // create google maps
   let map;
   let mapContainer = $('#map')[0];
   let mapCenter = { lat: 50.0064197, lng: 36.2349421 };
@@ -7,7 +8,7 @@ $(function () {
     center: mapCenter,
     zoom: 17,
     disableDefaultUI: true,
-    // start dark style
+    // gray style
     styles: [
       {
         "elementType": "geometry",
@@ -169,11 +170,11 @@ $(function () {
       }
     ]
   });
+  // создаем маркер
   let marker = new google.maps.Marker({
     position: mapCenter,
     map: map,
     title: 'Beetroot Academy',
-    img: 'images/Pin.png',
     icon: 'images/Pin.png',
   });
 

@@ -452,3 +452,124 @@
   width: 100%;
   height: 700px;
 }
+
+//start footer
+
+// contact modal
+
+.ba-footer {
+  padding: 204px 0 208px;
+  position: relative;
+  background: {
+    image: url(../images/imgForFooter.png), linear-gradient(90deg, rgba(85, 183, 254, 1) 0%, rgba(126, 93, 251, 1) 49%);
+    repeat: no-repeat;
+    position: center;
+    size: cover;
+  }
+  .ba-contact {
+    position: absolute;
+    width: 100%;
+    max-width: 770px;
+    padding: 75px 62px 75px 58px;
+    background: {
+      image: url(../images/foContact.jpg);
+      repeat: no-repeat;
+      position: bottom;
+      color: #fff;
+    }
+    top: -50%;
+    transform: translateX(50%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    .ba-title {
+      text-align: center;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      font-family: $primaryFontFamily;
+      color: $primaryColor;
+
+      &__item {
+        font-size: 2.75rem;
+        &::before {
+          content: "";
+          display: block;
+          width: 100px;
+          height: 1px;
+          background-color: $primaryColor;
+          margin: 0 auto 33px;
+        }
+      }
+    }
+    .ba-contact-wrapp {
+      display: flex;
+      .ba-adress {
+        width: 50%;
+        &__link {
+          display: block;
+          font-size: 1.125rem;
+          color: $primaryColor;
+          margin-bottom: 40px;
+          margin-right: 50px;
+          font-weight: 500;
+          font-family: $primaryFontFamily;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .ba-form {
+        width: 50%;
+        &__item {
+          width: 100%;
+          display: block;
+          border: none;
+          border-bottom: 1px solid #d5d9de;
+          padding: 0 0 18px 0;
+          outline: none;
+          font-family: $primaryFontFamily;
+          font-size: 1.125rem;
+          line-height: 22px;
+          font-weight: 500;
+          background-color: transparent;
+          &:first-child {
+            margin-bottom: 40px;
+          }
+
+          &:focus {
+            border-color: $primaryColor;
+          }
+          &::placeholder {
+            color: #d5d9de;
+            text-indent: 0px;
+            transition: text-indent 0.3s ease;
+          }
+          &:focus &::placeholder {
+            text-indent: 500px;
+          }
+        }
+        .ba-btn {
+          display: flex;
+          justify-content: flex-end;
+          margin-top: 50px;
+          &__item {
+            border: 1px solid $primaryColor;
+            font-size: 0.875rem;
+            padding: 17px 40px;
+            font-weight: 500;
+            background-color: transparent;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-family: $primaryFontFamily;
+            &:active {
+              color: #031933;
+              border-color: #031933;
+            }
+            &:hover {
+              color: #0b1e3570;
+              border-color: #0b1e3570;
+            }
+          }
+        }
+      }
+    }
+  }
+}
