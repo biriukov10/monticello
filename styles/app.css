@@ -40,7 +40,7 @@ img {
   margin-right: -15px; }
 
 .ba-row + .ba-row {
-  margin-top: 1rem; }
+  margin-top: 0.3rem; }
 
 [class^="ba-col-"] {
   padding: 0 15px; }
@@ -115,7 +115,7 @@ img {
         .ba-header .ba-header-wrapper .ba-menu__item:last-child {
           margin-right: 0; }
         .ba-header .ba-header-wrapper .ba-menu__item:hover {
-          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #49ff18, 0 0 10px #49ff18, 0 0 10px #49ff18; }
+          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #49ff18, 0 0 10px #49ff18; }
     .ba-header .ba-header-wrapper .ba-social {
       display: flex;
       justify-content: center;
@@ -341,7 +341,8 @@ img {
         background-color: #fff;
         margin: 0 auto 33px; }
   .ba-news .ba-project-card {
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 58px; }
     .ba-news .ba-project-card .ba-project-info {
       margin-top: -4px;
       padding: 24px 20px 29px;
@@ -361,22 +362,50 @@ img {
         line-height: 30px;
         font-weight: 400; }
       .ba-news .ba-project-card .ba-project-info .ba-contact-card {
+        display: flex;
         margin-top: 30px;
         font-family: "Open Sans", sans-serif; }
         .ba-news .ba-project-card .ba-project-info .ba-contact-card__image {
           margin-right: 20px; }
-        .ba-news .ba-project-card .ba-project-info .ba-contact-card__name {
+        .ba-news .ba-project-card .ba-project-info .ba-contact-card .ba-contact-wrapp {
           position: relative;
-          bottom: 30px;
-          text-transform: uppercase;
-          font-size: 1.125rem; }
-        .ba-news .ba-project-card .ba-project-info .ba-contact-card__date {
-          position: relative;
-          display: block;
-          left: 87px;
-          font-size: 0.875rem;
-          bottom: 24px;
-          color: #55b7ff; }
+          top: 10px; }
+          .ba-news .ba-project-card .ba-project-info .ba-contact-card .ba-contact-wrapp__name {
+            text-transform: uppercase;
+            font-size: 1.125rem;
+            display: inline-block;
+            margin-bottom: 5px; }
+          .ba-news .ba-project-card .ba-project-info .ba-contact-card .ba-contact-wrapp__date {
+            position: relative;
+            display: block;
+            font-size: 0.875rem;
+            color: #55b7ff; }
+  .ba-news .slick-prev {
+    left: -60px;
+    transition: 0.3s; }
+    .ba-news .slick-prev::before {
+      content: url(../images/L.png);
+      opacity: 1; }
+    .ba-news .slick-prev:hover {
+      opacity: 0.5; }
+  .ba-news .slick-next {
+    right: -60px;
+    transition: 0.3s; }
+    .ba-news .slick-next::before {
+      content: url(../images/R.png);
+      opacity: 1; }
+    .ba-news .slick-next:hover {
+      opacity: 0.5; }
+  .ba-news .slick-dots li {
+    margin-right: 40px; }
+    .ba-news .slick-dots li:last-child {
+      margin-right: 0; }
+    .ba-news .slick-dots li button {
+      width: 14px;
+      height: 14px; }
+      .ba-news .slick-dots li button::before {
+        font-size: 0.875rem;
+        color: #fff; }
 
 .ba-gallary {
   padding: 165px 0 140px;
@@ -399,8 +428,11 @@ img {
         margin: 0 auto 33px; }
   .ba-gallary .ba-slide-card__item {
     object-fit: cover; }
-  .ba-gallary .pad {
+  .ba-gallary .ba-col-6--pad {
     padding: 0 10px; }
+  .ba-gallary .ba-col-6--padNone {
+    padding: 0 6px;
+    padding-bottom: 1px; }
   .ba-gallary .ba-link {
     display: flex;
     justify-content: center;

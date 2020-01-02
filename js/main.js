@@ -192,15 +192,53 @@ $(function () {
   //   }
 
   // });
+  // $(".ba-scroll-down__link").on("click", function (e) {
+  //   let href = $(this).attr('href');
 
-});
+  //   $('html, body').animate({
+  //     scrollTop: $(href).offset().top
+  //   }, {
+  //     duration: 370,   // по умолчанию «400» 
+  //     easing: "linear" // по умолчанию «swing» 
+  //   });
 
-let d = document.querySelector('.ba-scroll-down__link');
-d.onclick = function (event) {
-  event.preventDefault();
-  let blockID = this.getAttribute('href');
-  document.querySelector('' + blockID).scrollIntoView({
-    behavior: 'smooth',
-    block: 'start',
+  // });
+
+
+  // slick fot news section 
+
+  $('.ba-slick').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
   });
-}
+
+
+  // scroll for project
+  let down = document.querySelector('.ba-scroll-down__link');
+
+  down.onclick = function (event) {
+    event.preventDefault();
+    let blockID = this.getAttribute('href');
+    document.querySelector('' + blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+
+  // light scroll for all link
+  let allLink = document.querySelectorAll('.ba-menu__link');
+
+  for (let i = 0; i < allLink.length; i++) {
+    allLink[i].onclick = function (event) {
+      event.preventDefault();
+      let blockID = this.getAttribute('href');
+      document.querySelector('' + blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  }
+});

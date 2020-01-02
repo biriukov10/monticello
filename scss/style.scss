@@ -29,7 +29,7 @@
           margin-right: 0;
         }
         &:hover {
-          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #49ff18, 0 0 10px #49ff18, 0 0 10px #49ff18;
+          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #49ff18, 0 0 10px #49ff18;
         }
       }
     }
@@ -346,6 +346,7 @@
   }
   .ba-project-card {
     width: 100%;
+    margin-bottom: 58px;
 
     .ba-project-info {
       margin-top: -4px;
@@ -370,24 +371,67 @@
         font-weight: 400;
       }
       .ba-contact-card {
+        display: flex;
         margin-top: 30px;
         font-family: $secondaryFontFamily;
         &__image {
           margin-right: 20px;
         }
-        &__name {
+        .ba-contact-wrapp {
           position: relative;
-          bottom: 30px;
-          text-transform: uppercase;
-          font-size: 1.125rem;
+          top: 10px;
+          &__name {
+            text-transform: uppercase;
+            font-size: 1.125rem;
+            display: inline-block;
+            margin-bottom: 5px;
+          }
+          &__date {
+            position: relative;
+            display: block;
+            font-size: 0.875rem;
+            color: #55b7ff;
+          }
         }
-        &__date {
-          position: relative;
-          display: block;
-          left: 87px;
+      }
+    }
+  }
+  .slick-prev {
+    left: -60px;
+    transition: 0.3s;
+    &::before {
+      content: url(../images/L.png);
+      opacity: 1;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .slick-next {
+    right: -60px;
+    transition: 0.3s;
+    &::before {
+      content: url(../images/R.png);
+      opacity: 1;
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  .slick-dots {
+    li {
+      margin-right: 40px;
+      &:last-child {
+        margin-right: 0;
+      }
+      button {
+        width: 14px;
+        height: 14px;
+        &::before {
           font-size: 0.875rem;
-          bottom: 24px;
-          color: #55b7ff;
+          color: #fff;
         }
       }
     }
@@ -422,8 +466,12 @@
   .ba-slide-card__item {
     object-fit: cover;
   }
-  .pad {
+  .ba-col-6--pad {
     padding: 0 10px;
+  }
+  .ba-col-6--padNone {
+    padding: 0 6px;
+    padding-bottom: 1px;
   }
 
   .ba-link {

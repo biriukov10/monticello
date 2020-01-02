@@ -40,7 +40,7 @@ img {
   margin-right: -15px; }
 
 .ba-row + .ba-row {
-  margin-top: 1rem; }
+  margin-top: 0.3rem; }
 
 [class^="ba-col-"] {
   padding: 0 15px; }

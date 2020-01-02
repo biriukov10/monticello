@@ -30,16 +30,16 @@
         <nav class="ba-nav">
           <ul class="ba-menu">
             <li class="ba-menu__item">
-              <a href="#" class="ba-menu__link">About Us</a>
+              <a href="#about" class="ba-menu__link">About Us</a>
             </li>
             <li class="ba-menu__item">
-              <a href="#" class="ba-menu__link">projects</a></li>
+              <a href="#projects" class="ba-menu__link">projects</a></li>
             </li>
             <li class="ba-menu__item">
-              <a href="#" class="ba-menu__link">news</a>
+              <a href="#gallary" class="ba-menu__link">news</a>
             </li>
             <li class="ba-menu__item">
-              <a href="#" class="ba-menu__link">contact</a>
+              <a href="#contact" class="ba-menu__link">contact</a>
             </li>
           </ul>
         </nav>
@@ -77,7 +77,7 @@
   <!-- end header -->
   <main role="main">
     <!-- start section ba about -->
-    <section class="ba-about">
+    <section class="ba-about" id="about">
       <div class="container">
         <div class="ba-title">
           <h1 class="ba-title__item">what we do</h1>
@@ -130,7 +130,7 @@
         <div class="ba-title">
           <h1 class="ba-title__item">latest news</h1>
         </div>
-        <div class="ba-row">
+        <div class="ba-row ba-slick">
           <div class="ba-col-4">
             <div class="ba-project-card">
               <img src="images/newsSlide1.jpg" alt="Project One" class="ba-project-card__image">
@@ -141,8 +141,10 @@
                   searching for</p>
                 <div class="ba-contact-card">
                   <img src="images/isaac.png" class="ba-contact-card__image" alt="Isaac Dunn">
-                  <span class="ba-contact-card__name">Isaac Dunn</span>
-                  <date class="ba-contact-card__date">09 Feb 2017</date>
+                  <div class="ba-contact-wrapp">
+                    <span class="ba-contact-wrapp__name">Isaac Dunn</span>
+                    <date class="ba-contact-wrapp__date">09 Feb 2017</date>
+                  </div>
                 </div>
               </div>
             </div>
@@ -155,8 +157,10 @@
                 <p class="ba-project-info__text">Having a home based business is a wonderful asset to your life.</p>
                 <div class="ba-contact-card">
                   <img src="images/dominic.png" class="ba-contact-card__image" alt="Dominic Freeman">
-                  <span class="ba-contact-card__name">Dominic Freeman</span>
-                  <date class="ba-contact-card__date">24 Apr 2017</date>
+                  <div class="ba-contact-wrapp">
+                    <span class="ba-contact-wrapp__name">Dominic Freeman</span>
+                    <date class="ba-contact-wrapp__date">24 Apr 2017</date>
+                  </div>
                 </div>
               </div>
             </div>
@@ -169,8 +173,42 @@
                 <p class="ba-project-info__text">There are many things that are important to catalog design....</p>
                 <div class="ba-contact-card">
                   <img src="images/alice.png" class="ba-contact-card__image" alt="Alice Ward">
-                  <span class="ba-contact-card__name">Alice Ward</span>
-                  <date class="ba-contact-card__date">30 Dec 2017</date>
+                  <div class="ba-contact-wrapp">
+                    <span class="ba-contact-wrapp__name">Alice Ward</span>
+                    <date class="ba-contact-wrapp__date">30 Dec 2017</date>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ba-col-4">
+            <div class="ba-project-card">
+              <img src="images/newsSlide2.jpg" alt="Project One" class="ba-project-card__image">
+              <div class="ba-project-info">
+                <h2 class="ba-project-info__title">Effective Advertising Pointers.</h2>
+                <p class="ba-project-info__text">Having a home based business is a wonderful asset to your life.</p>
+                <div class="ba-contact-card">
+                  <img src="images/dominic.png" class="ba-contact-card__image" alt="Dominic Freeman">
+                  <div class="ba-contact-wrapp">
+                    <span class="ba-contact-wrapp__name">Dominic Freeman</span>
+                    <date class="ba-contact-wrapp__date">24 Apr 2017</date>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ba-col-4">
+            <div class="ba-project-card">
+              <img src="images/newsSlide2.jpg" alt="Project One" class="ba-project-card__image">
+              <div class="ba-project-info">
+                <h2 class="ba-project-info__title">Effective Advertising Pointers.</h2>
+                <p class="ba-project-info__text">Having a home based business is a wonderful asset to your life.</p>
+                <div class="ba-contact-card">
+                  <img src="images/dominic.png" class="ba-contact-card__image" alt="Dominic Freeman">
+                  <div class="ba-contact-wrapp">
+                    <span class="ba-contact-wrapp__name">Dominic Freeman</span>
+                    <date class="ba-contact-wrapp__date">24 Apr 2017</date>
+                  </div>
                 </div>
               </div>
             </div>
@@ -180,30 +218,40 @@
     </section>
     <!-- end section news -->
     <!-- start section gallary -->
-    <section class="ba-gallary">
+    <section class="ba-gallary" id="gallary">
       <div class="container">
         <div class="ba-title">
           <h1 class="ba-title__item">gallary</h1>
         </div>
         <div class="ba-row">
-          <div class="ba-col-6 pad">
+          <div class="ba-col-6 ba-col-6--pad">
             <div class="ba-slide-card">
               <img src="images/bigSlide1.jpg" alt="House 1" class="ba-slide-card__item">
             </div>
           </div>
-          <div class="ba-col-6 pad">
+          <div class="ba-col-6 ba-col-6--pad">
             <div class="ba-row">
-              <div class="ba-col-6 pad">
-                <img src="images/line1Slide1.jpg" alt="house 2" class="ba-slide-card__item">
+              <div class="ba-col-6 ba-col-6--padNone">
+                <div class="wrapp">
+                  <img src="images/line1Slide1.jpg" alt="house 2" class="ba-slide-card__item">
+                </div>
               </div>
-              <div class="ba-col-6 pad">
-                <img src="images/line1Slide2.jpg" alt="house 2" class="ba-slide-card__item">
+              <div class="ba-col-6 ba-col-6--padNone">
+                <div class="wrapp">
+                  <img src="images/line1Slide2.jpg" alt="house 2" class="ba-slide-card__item">
+                </div>
               </div>
-              <div class="ba-col-6 pad">
-                <img src="images/line2Slide1.jpg" alt="house 2" class="ba-slide-card__item">
+            </div>
+            <div class="ba-row">
+              <div class="ba-col-6 ba-col-6--padNone">
+                <div class="wrapp">
+                  <img src="images/line2Slide1.jpg" alt="house 2" class="ba-slide-card__item">
+                </div>
               </div>
-              <div class="ba-col-6 pad">
-                <img src="images/line2Slide2.jpg" alt="house 2" class="ba-slide-card__item">
+              <div class="ba-col-6 ba-col-6--padNone">
+                <div class="wrapp">
+                  <img src="images/line2Slide2.jpg" alt="house 2" class="ba-slide-card__item">
+                </div>
               </div>
             </div>
           </div>
@@ -219,7 +267,7 @@
     <!-- end block maps -->
   </main>
   <footer class="ba-footer">
-    <div class="ba-contact">
+    <div class="ba-contact" id="contact">
       <div class="ba-title">
         <h1 class="ba-title__item">get in touch</h1>
       </div>
