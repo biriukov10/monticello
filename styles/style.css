@@ -95,6 +95,7 @@ img {
   color: #fff;
   text-transform: uppercase;
   font-family: "Gotham Pro", sans-serif;
+  overflow: hidden;
   background-image: url(../images/imgBg.png), linear-gradient(90deg, #55b7fe 0%, #7e5dfb 49%);
   background-repeat: no-repeat;
   background-position: center;
@@ -173,7 +174,8 @@ img {
   padding-top: 130px;
   font-family: "Gotham Pro", sans-serif;
   text-transform: uppercase;
-  color: #2c4058; }
+  color: #2c4058;
+  overflow: hidden; }
   .ba-about .ba-title {
     text-align: center;
     margin-bottom: 155px; }
@@ -194,7 +196,7 @@ img {
       position: relative;
       width: 100%;
       height: 470px;
-      margin-right: 160px; }
+      margin-right: 75px; }
       .ba-about .ba-trade .ba-image-wrapper__block {
         width: 100%;
         max-width: 100%;
@@ -205,11 +207,9 @@ img {
         right: 40%; }
       .ba-about .ba-trade .ba-image-wrapper__item {
         object-fit: cover;
-        width: 100%;
         max-width: 630px;
         position: relative;
-        z-index: 10;
-        left: 90px; }
+        z-index: 10; }
     .ba-about .ba-trade .ba-trade-desc {
       padding-top: 53px; }
       .ba-about .ba-trade .ba-trade-desc__tagline {
@@ -319,6 +319,7 @@ img {
 
 .ba-news {
   padding: 170px 0 140px;
+  overflow: hidden;
   background-image: url(../images/newsBg2.png), linear-gradient(to right top, #3c7fd4, #2393e2, #00a7ec, #00baf4, #24ccfa);
   background-repeat: no-repeat;
   background-position: center;
@@ -378,7 +379,8 @@ img {
           color: #55b7ff; }
 
 .ba-gallary {
-  padding: 165px 0 140px; }
+  padding: 165px 0 140px;
+  overflow: hidden; }
   .ba-gallary .ba-title {
     text-align: center;
     margin-bottom: 90px;
@@ -463,6 +465,7 @@ img {
       .ba-footer .ba-contact .ba-contact-wrapp .ba-adress {
         width: 50%; }
         .ba-footer .ba-contact .ba-contact-wrapp .ba-adress__link {
+          position: relative;
           display: block;
           font-size: 1.125rem;
           color: #2c4058;
@@ -472,6 +475,16 @@ img {
           font-family: "Gotham Pro", sans-serif; }
           .ba-footer .ba-contact .ba-contact-wrapp .ba-adress__link:last-child {
             margin-bottom: 0; }
+        .ba-footer .ba-contact .ba-contact-wrapp .ba-adress__item {
+          width: 15px;
+          height: 20px;
+          position: absolute;
+          left: -20px; }
+          .ba-footer .ba-contact .ba-contact-wrapp .ba-adress__item--facs {
+            left: -22px; }
+          .ba-footer .ba-contact .ba-contact-wrapp .ba-adress__item--clock {
+            width: 16px;
+            left: -22px; }
       .ba-footer .ba-contact .ba-contact-wrapp .ba-form {
         width: 50%; }
         .ba-footer .ba-contact .ba-contact-wrapp .ba-form__item {
