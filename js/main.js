@@ -178,5 +178,29 @@ $(function () {
     icon: 'images/Pin.png',
   });
 
+  //scroll
+
+  // $('.ba-scroll-down__link').on('click', function (event) {
+  //   event.preventDefault();
+  //   let $blockID = $(this);
+  //   let $destantion = $blockID[0].offsetTop;
+  //   console.log($destantion);
+  //   if ($destantion != 0) {
+  //     $('html, body').animate({
+  //       scrollTo: $destantion
+  //     }, 1000);
+  //   }
+
+  // });
 
 });
+
+let d = document.querySelector('.ba-scroll-down__link');
+d.onclick = function (event) {
+  event.preventDefault();
+  let blockID = this.getAttribute('href');
+  document.querySelector('' + blockID).scrollIntoView({
+    behavior: 'smooth',
+    block: 'start',
+  });
+}

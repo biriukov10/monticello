@@ -115,7 +115,7 @@ img {
         .ba-header .ba-header-wrapper .ba-menu__item:last-child {
           margin-right: 0; }
         .ba-header .ba-header-wrapper .ba-menu__item:hover {
-          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18, 0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18; }
+          text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #49ff18, 0 0 10px #49ff18, 0 0 10px #49ff18; }
     .ba-header .ba-header-wrapper .ba-social {
       display: flex;
       justify-content: center;
@@ -475,6 +475,8 @@ img {
           font-family: "Gotham Pro", sans-serif; }
           .ba-footer .ba-contact .ba-contact-wrapp .ba-adress__link:last-child {
             margin-bottom: 0; }
+          .ba-footer .ba-contact .ba-contact-wrapp .ba-adress__link:hover {
+            opacity: 0.7; }
         .ba-footer .ba-contact .ba-contact-wrapp .ba-adress__item {
           width: 15px;
           height: 20px;
