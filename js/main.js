@@ -210,6 +210,16 @@ $(function () {
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 875,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          dots: false,
+        }
+      }
+    ]
   });
 
 
@@ -221,6 +231,24 @@ $(function () {
     dots: true,
     autoplay: true,
     autoplaySpeed: 4000,
+    responsive: [
+      {
+        breakpoint: 1050,
+        settings: {
+          arrows: true,
+          slidesToShow: 3
+        }
+      },
+      // {
+      //   breakpoint: 480,
+      //   settings: {
+      //     arrows: false,
+      //     centerMode: true,
+      //     centerPadding: '40px',
+      //     slidesToShow: 1
+      //   }
+      // }
+    ]
   });
 
   // немного магии
