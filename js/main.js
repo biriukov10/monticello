@@ -203,6 +203,14 @@ $(function () {
   //   });
 
   // });
+  // header slick
+
+  $('.ba-wrapp-slider').slick({
+    dots: true,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  });
 
 
   // slick fot news section 
@@ -212,7 +220,17 @@ $(function () {
     slidesToScroll: 1,
     dots: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
+  });
+
+  // немного магии
+
+  $('.ba-menu__circle').on('click', function () {
+    if ($(this).hasClass('active')) {
+      $(this).toggleClass('active');
+    } else {
+      $(this).toggleClass('active');
+    }
   });
 
 
