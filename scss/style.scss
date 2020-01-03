@@ -93,12 +93,46 @@
       letter-spacing: 2.5px;
       margin-bottom: 27px;
       cursor: pointer;
+      &--purple {
+        color: rgb(53%, 13%, 47%);
+        text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5,
+          0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+      }
+      &--yellow {
+        color: rgb(176, 184, 29);
+        text-shadow: 3px 5px 2px #474747;
+      }
+      &--green {
+        color: rgb(29, 184, 55);
+        text-shadow: #fffca8 2px 2px 0px, #9c9c9c 4px 4px 0px;
+      }
+      &--blue {
+        color: rgb(27, 30, 222);
+        text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+      }
     }
     &__text {
       font-size: 1.125rem;
       letter-spacing: 3.5px;
       font-weight: 300;
       cursor: pointer;
+      &--purple {
+        color: rgb(53%, 13%, 47%);
+        text-shadow: 2px 2px 0 #4074b5, 2px -2px 0 #4074b5, -2px 2px 0 #4074b5, -2px -2px 0 #4074b5, 2px 0px 0 #4074b5,
+          0px 2px 0 #4074b5, -2px 0px 0 #4074b5, 0px -2px 0 #4074b5;
+      }
+      &--yellow {
+        color: rgb(176, 184, 29);
+        text-shadow: 3px 5px 2px #474747;
+      }
+      &--green {
+        color: rgb(29, 184, 55);
+        text-shadow: #fffca8 2px 2px 0px, #9c9c9c 4px 4px 0px;
+      }
+      &--blue {
+        color: rgb(27, 30, 222);
+        text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+      }
     }
   }
   .ba-wrapp-slider {

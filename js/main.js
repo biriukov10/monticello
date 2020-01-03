@@ -210,6 +210,8 @@ $(function () {
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
     responsive: [
       {
         breakpoint: 875,
@@ -233,21 +235,20 @@ $(function () {
     autoplaySpeed: 4000,
     responsive: [
       {
-        breakpoint: 1050,
+        breakpoint: 953,
         settings: {
           arrows: true,
-          slidesToShow: 3
+          slidesToShow: 2
         }
       },
-      // {
-      //   breakpoint: 480,
-      //   settings: {
-      //     arrows: false,
-      //     centerMode: true,
-      //     centerPadding: '40px',
-      //     slidesToShow: 1
-      //   }
-      // }
+      {
+        breakpoint: 739,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          dots: false,
+        }
+      }
     ]
   });
 
