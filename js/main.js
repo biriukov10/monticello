@@ -178,6 +178,12 @@ $(function () {
     icon: 'images/Pin.png',
   });
 
+
+
+  // $('.ba-menu__link').animate({
+  //   'font-size': '5rem',
+  // }, 1500);
+
   //scroll
 
   // $('.ba-scroll-down__link').on('click', function (event) {
@@ -210,8 +216,6 @@ $(function () {
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 4000,
     responsive: [
       {
         breakpoint: 875,

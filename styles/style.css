@@ -90,6 +90,9 @@ img {
   margin: 0;
   overflow: hidden; }
 
+#menu-checkbox {
+  display: none; }
+
 .ba-header {
   padding: 50px 0 48px;
   color: #fff;
@@ -479,8 +482,17 @@ img {
         height: 1px;
         background-color: #2c4058;
         margin: 0 auto 33px; }
-  .ba-gallary .ba-slide-card__item {
-    object-fit: cover; }
+  .ba-gallary .ba-slide-card {
+    position: relative; }
+  .ba-gallary .degree {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
   .ba-gallary .ba-col-6--pad {
     padding: 0 10px; }
   .ba-gallary .ba-col-6--padNone {

@@ -537,9 +537,20 @@
       }
     }
   }
-  .ba-slide-card__item {
-    object-fit: cover;
+  .ba-slide-card {
+    position: relative;
   }
+  .degree {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
   .ba-col-6--pad {
     padding: 0 10px;
   }

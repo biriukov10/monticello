@@ -87,13 +87,33 @@
       padding-top: 100px;
     }
     .ba-header-wrapper {
-      .ba-menu {
-        display: flex;
-        flex-direction: column;
-        &__item {
-          margin-right: 10px;
-          margin-bottom: 10px;
+      .ba-nav {
+        .ba-menu {
+          display: none;
+          &__item {
+            margin-bottom: 10px;
+          }
         }
+        .toggle-button {
+          position: relative;
+          text-align: center;
+          display: block;
+          cursor: pointer;
+          color: #fff;
+          margin-bottom: 10px;
+          &::after {
+            content: attr(data-open);
+            display: block;
+          }
+        }
+      }
+
+      #menu-checkbox:checked + nav[role="navigation"] .ba-menu {
+        display: block;
+      }
+
+      #menu-checkbox:checked + nav[role="navigation"] .toggle-button::after {
+        content: attr(data-close);
       }
     }
     .ba-scroll-down {
@@ -233,7 +253,7 @@
       }
       .ba-col-sm-6 {
         width: 100%;
-        padding: 0 15px 0 30px;
+        padding: 0 20px;
       }
     }
   }
@@ -343,31 +363,6 @@
 
 @media screen and(max-width: 488px) {
   .ba-header {
-    position: relative;
-    .ba-header-wrapper {
-      .ba-logo {
-        margin: 0 auto;
-      }
-      .ba-nav {
-        position: absolute;
-        top: 20px;
-        left: 0;
-        right: 0;
-        .ba-menu {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          padding: 0 20px;
-          .ba-menu__circle {
-            display: none;
-          }
-          &__item {
-            margin-right: 0;
-            font-size: 0.675rem;
-          }
-        }
-      }
-    }
     .ba-tagline {
       padding-top: 50px;
     }
@@ -384,6 +379,29 @@
 }
 
 @media screen and(max-width: 488px) {
+  .ba-header {
+    .ba-header-wrapper {
+      #menu-checkbox:checked + nav[role="navigation"] .ba-menu {
+        display: flex;
+        position: absolute;
+        padding: 0 10px;
+        font-size: 0.75rem;
+        left: 0;
+        top: 0;
+        right: 0;
+        margin: auto;
+        &__circle {
+          display: none;
+        }
+        &__item {
+          margin-right: 20px;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
   .ba-news {
     .ba-row {
       .ba-col-sm-12 {
