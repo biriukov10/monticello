@@ -247,7 +247,7 @@
     padding: 0 10px;
     font-size: 0.75rem;
     left: 0;
-    top: 0;
+    top: 10px;
     right: 0;
     margin: auto; }
     .ba-header .ba-header-wrapper #menu-checkbox:checked + nav[role="navigation"] .ba-menu__circle {
