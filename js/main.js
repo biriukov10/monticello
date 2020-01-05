@@ -228,7 +228,6 @@ $(function () {
     ]
   });
 
-
   // slick fot news section 
 
   $('.ba-slick').slick({
@@ -266,6 +265,7 @@ $(function () {
     event.preventDefault();
     $(this).children('span').removeClass('active');
   });
+
 
 
   // scroll for project
