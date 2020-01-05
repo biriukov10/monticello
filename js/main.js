@@ -256,14 +256,15 @@ $(function () {
     ]
   });
 
-  // немного магии
+  // немного магии$(this).toggleClass('active');
 
-  $('.ba-menu__circle').on('click', function () {
-    if ($(this).hasClass('active')) {
-      $(this).toggleClass('active');
-    } else {
-      $(this).toggleClass('active');
-    }
+  $('.ba-menu__item').on('mouseover', function (event) {
+    event.preventDefault();
+    $(this).children('span').addClass('active');
+  });
+  $('.ba-menu__item').on('mouseleave', function (event) {
+    event.preventDefault();
+    $(this).children('span').removeClass('active');
   });
 
 
