@@ -280,11 +280,31 @@ $(function () {
     });
   }
 
+  down.ontouchstart = function (event) {
+    event.preventDefault();
+    let blockID = this.getAttribute('href');
+    document.querySelector('' + blockID).scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  }
+
   // light scroll for all link
   let allLink = document.querySelectorAll('.ba-menu__link');
 
   for (let i = 0; i < allLink.length; i++) {
     allLink[i].onclick = function (event) {
+      event.preventDefault();
+      let blockID = this.getAttribute('href');
+      document.querySelector('' + blockID).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  }
+
+  for (let i = 0; i < allLink.length; i++) {
+    allLink[i].ontouchstart = function (event) {
       event.preventDefault();
       let blockID = this.getAttribute('href');
       document.querySelector('' + blockID).scrollIntoView({
